@@ -1,5 +1,4 @@
 # 💱 Currency Convert
-
 ---
 
 ## 📌 Sobre o projeto
