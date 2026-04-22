@@ -12,7 +12,7 @@ O projeto foi desenvolvido com foco em prática de lógica de programação, man
 
 ---
 
-## 🚀 Funcionalidades
+## ⚙ Funcionalidades
 
 - Inserção de valor a ser convertido
 - Seleção de moeda (USD, EUR, GBP)
