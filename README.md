@@ -1,9 +1,9 @@
-# 💱 Currency Convert
+# 💱 Currency Converter
 ---
 
 ## 📌 Sobre o projeto
 
-O **Currency Convert** é uma aplicação web que realiza a conversão de valores entre diferentes moedas (USD, EUR e GBP) para Real (BRL).
+O **Currency Converter** é uma aplicação web que realiza a conversão de valores entre diferentes moedas (USD, EUR e GBP) para Real (BRL).
 
 Na primeira versão, as taxas de câmbio são baseadas em valores fixos definidos no código, simulando o comportamento de um sistema de 
 conversão monetária.
