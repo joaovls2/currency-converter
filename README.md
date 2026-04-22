@@ -44,7 +44,3 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
 - JavaScript 
 
 ---
-
-## 📷 Preview
-
-(Adicionar imagem ou gif do projeto aqui)
