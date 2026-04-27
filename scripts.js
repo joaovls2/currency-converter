@@ -15,18 +15,25 @@ amount.addEventListener("input", () => {
 form.onsubmit = async (event) =>{
     event.preventDefault();
 
-    fetch
+    const selectedCurrency = currency.value;
 
-    switch (currency.value) {
-        case "USD":
-            convertCurrency(amount.value, USD, "US$");
-            break;
-        case "EUR":
-            convertCurrency(amount.value, EUR, "€");
-            break;
-        case "GBP":
-            convertCurrency(amount.value, GBP, "£");
-            break;
+    try {
+        const response = await fetch(`/api/convert?currency=${selectedCurrency}`);
+        const data = await response.json();
+
+        const rate = data.rate;
+
+        let symbol;
+
+        if (selectedCurrency === "USD") symbol = "US$";
+        if (selectedCurrency === "EUR") symbol = "€";
+        if (selectedCurrency === "GBP") symbol = "£";
+
+        convertCurrency(amount.value, rate, symbol);
+
+    } catch (error) {
+        alert("Erro ao buscar cotação.");
+        console.log(error);
     }
 }
 
