@@ -1,7 +1,3 @@
-const USD = 5.16;
-const EUR = 5.39;
-const GBP = 6.20;
-
 const form = document.querySelector("form");
 const amount = document.getElementById("amount");
 const currency = document.getElementById("currency");
@@ -16,8 +12,10 @@ amount.addEventListener("input", () => {
     amount.value = amount.value.replace(hasCharactersRegex, ""); // Quando digita letra, o replace substitui por nada
 })
 
-form.onsubmit = (event) =>{
+form.onsubmit = async (event) =>{
     event.preventDefault();
+
+    fetch
 
     switch (currency.value) {
         case "USD":
