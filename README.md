@@ -57,6 +57,12 @@ Com isso, o projeto evoluiu de uma aplicação estática para uma aplicação di
 
 ---
 
+## ⚠️ Observações
+
+Os valores de câmbio podem apresentar pequenas variações em relação a outras fontes, devido à atualização em tempo real e à diferença entre provedores de dados.
+
+---
+
 ## 🧠 Aprendizados
 
 Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
