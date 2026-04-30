@@ -16,11 +16,11 @@ export default async function handler(req, res) {
     }
 
     if (currency === "EUR") {
-      rate = data.quotes.USDEUR * data.quotes.USDBRL;
+      rate = data.quotes.USDBRL / data.quotes.USDEUR;
     }
 
     if (currency === "GBP") {
-      rate = data.quotes.USDGBP * data.quotes.USDBRL;
+      rate = data.quotes.USDBRL / data.quotes.USDGBP;
     }
 
     res.status(200).json({ rate });
